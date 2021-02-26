@@ -226,3 +226,18 @@ Migrating to SetDefaultValuetoBoolean (20210226164359)
   [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "album", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lift Yourself"], ["artist", "Kanye West"], ["album", "Lift Yourself"], ["time", "2:27"], ["created_at", "2021-02-26 16:51:02.880848"], ["updated_at", "2021-02-26 16:51:02.880848"]]
   [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+Started GET "/songs" for ::1 at 2021-02-26 11:57:12 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 8.4ms | ActiveRecord: 3.1ms | Allocations: 9457)
+
+
+Started GET "/songs" for ::1 at 2021-02-26 11:57:40 -0500
+Processing by SongsController#index as */*
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1508)
+
+
