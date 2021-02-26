@@ -448,3 +448,823 @@ Processing by SongsController#index as HTML
 Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1532)
 
 
+Started GET "/tunatunr/" for ::1 at 2021-02-26 14:15:43 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as */*
+  Parameters: {"name"=>"poop", "artist"=>"poop", "album"=>"poop", "time"=>"poop2", "song"=>{"name"=>"poop", "artist"=>"poop", "album"=>"poop", "time"=>"poop2"}}
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 8.2ms | ActiveRecord: 2.9ms | Allocations: 7667)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:00 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1525)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:03 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1520)
+
+
+Started PUT "/tunatunr/id/8" for ::1 at 2021-02-26 14:16:04 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>true, "id"=>"8", "song"=>{"favorite"=>true}}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", true], ["updated_at", "2021-02-26 19:16:04.367633"], ["id", 8]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 1.1ms | Allocations: 4491)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:04 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1503)
+
+
+Started PUT "/tunatunr/id/7" for ::1 at 2021-02-26 14:16:05 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>true, "id"=>"7", "song"=>{"favorite"=>true}}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", true], ["updated_at", "2021-02-26 19:16:05.021109"], ["id", 7]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (14.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 15.4ms | Allocations: 2307)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:05 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1503)
+
+
+Started PUT "/tunatunr/id/6" for ::1 at 2021-02-26 14:16:05 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>true, "id"=>"6", "song"=>{"favorite"=>true}}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", true], ["updated_at", "2021-02-26 19:16:05.574273"], ["id", 6]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 2290)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:05 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1503)
+
+
+Started PUT "/tunatunr/id/5" for ::1 at 2021-02-26 14:16:06 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>true, "id"=>"5", "song"=>{"favorite"=>true}}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", true], ["updated_at", "2021-02-26 19:16:06.061166"], ["id", 5]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 2290)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:06 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1503)
+
+
+Started PUT "/tunatunr/id/7" for ::1 at 2021-02-26 14:16:07 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>false, "id"=>"7", "song"=>{"favorite"=>false}}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", false], ["updated_at", "2021-02-26 19:16:07.019098"], ["id", 7]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 2294)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:07 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1504)
+
+
+Started PUT "/tunatunr/id/8" for ::1 at 2021-02-26 14:16:07 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>false, "id"=>"8", "song"=>{"favorite"=>false}}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", false], ["updated_at", "2021-02-26 19:16:07.325802"], ["id", 8]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 2283)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:07 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1503)
+
+
+Started PUT "/tunatunr/id/5" for ::1 at 2021-02-26 14:16:07 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>false, "id"=>"5", "song"=>{"favorite"=>false}}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.3ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", false], ["updated_at", "2021-02-26 19:16:07.874882"], ["id", 5]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (14.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 15.3ms | Allocations: 2283)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:07 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1503)
+
+
+Started PUT "/tunatunr/id/6" for ::1 at 2021-02-26 14:16:08 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>false, "id"=>"6", "song"=>{"favorite"=>false}}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", false], ["updated_at", "2021-02-26 19:16:08.073842"], ["id", 6]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 2282)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:08 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 1503)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:09 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1503)
+
+
+Started PUT "/tunatunr/id/2" for ::1 at 2021-02-26 14:16:09 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>true, "id"=>"2", "song"=>{"favorite"=>true}}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", true], ["updated_at", "2021-02-26 19:16:09.961268"], ["id", 2]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 2284)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:09 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1503)
+
+
+Started PUT "/tunatunr/id/2" for ::1 at 2021-02-26 14:16:10 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>false, "id"=>"2", "song"=>{"favorite"=>false}}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", false], ["updated_at", "2021-02-26 19:16:10.547044"], ["id", 2]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (14.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 15.2ms | Allocations: 2283)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:10 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1503)
+
+
+Started POST "/tunatunr" for ::1 at 2021-02-26 14:16:29 -0500
+Processing by SongsController#create as HTML
+  Parameters: {"name"=>"haha", "album"=>"hh", "artist"=>"hhah", "time"=>"h", "song"=>{"name"=>"haha", "artist"=>"hhah", "album"=>"hh", "time"=>"h"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "album", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "haha"], ["artist", "hhah"], ["album", "hh"], ["time", "h"], ["created_at", "2021-02-26 19:16:29.903895"], ["updated_at", "2021-02-26 19:16:29.903895"]]
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:20:in `create'
+Completed 201 Created in 6ms (Views: 0.9ms | ActiveRecord: 1.9ms | Allocations: 2212)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:29 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1621)
+
+
+Started GET "/tunatunr/" for ::1 at 2021-02-26 14:16:32 -0500
+Processing by SongsController#index as */*
+  Parameters: {"name"=>"poop", "artist"=>"poop", "album"=>"poop", "time"=>"poop2", "song"=>{"name"=>"poop", "artist"=>"poop", "album"=>"poop", "time"=>"poop2"}}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1626)
+
+
+Started DELETE "/tunatunr/id/9" for ::1 at 2021-02-26 14:16:36 -0500
+Processing by SongsController#destroy as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (0.2ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (16.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 21ms (ActiveRecord: 16.8ms | Allocations: 1832)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:36 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1504)
+
+
+Started DELETE "/tunatunr/id/8" for ::1 at 2021-02-26 14:16:37 -0500
+Processing by SongsController#destroy as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (0.2ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (14.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 19ms (ActiveRecord: 15.3ms | Allocations: 1772)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:37 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms | Allocations: 1385)
+
+
+Started DELETE "/tunatunr/id/7" for ::1 at 2021-02-26 14:16:37 -0500
+Processing by SongsController#destroy as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (0.2ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 4ms (ActiveRecord: 0.8ms | Allocations: 1772)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:37 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1267)
+
+
+Started DELETE "/tunatunr/id/6" for ::1 at 2021-02-26 14:16:40 -0500
+Processing by SongsController#destroy as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (0.2ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 4ms (ActiveRecord: 1.0ms | Allocations: 1772)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:40 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1149)
+
+
+Started GET "/tunatunr/" for ::1 at 2021-02-26 14:16:42 -0500
+Processing by SongsController#index as */*
+  Parameters: {"name"=>"poop", "artist"=>"poop", "album"=>"poop", "time"=>"poop2", "song"=>{"name"=>"poop", "artist"=>"poop", "album"=>"poop", "time"=>"poop2"}}
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1154)
+
+
+Started PUT "/tunatunr/id/5" for ::1 at 2021-02-26 14:16:45 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>true, "id"=>"5", "song"=>{"favorite"=>true}}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", true], ["updated_at", "2021-02-26 19:16:45.237003"], ["id", 5]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 2284)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:45 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1149)
+
+
+Started PUT "/tunatunr/id/4" for ::1 at 2021-02-26 14:16:45 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>true, "id"=>"4", "song"=>{"favorite"=>true}}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", true], ["updated_at", "2021-02-26 19:16:45.488976"], ["id", 4]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 2282)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:45 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1149)
+
+
+Started PUT "/tunatunr/id/3" for ::1 at 2021-02-26 14:16:45 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>true, "id"=>"3", "song"=>{"favorite"=>true}}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", true], ["updated_at", "2021-02-26 19:16:45.750802"], ["id", 3]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 2282)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:45 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1150)
+
+
+Started PUT "/tunatunr/id/2" for ::1 at 2021-02-26 14:16:46 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>true, "id"=>"2", "song"=>{"favorite"=>true}}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", true], ["updated_at", "2021-02-26 19:16:46.530500"], ["id", 2]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 2283)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:46 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1149)
+
+
+Started PUT "/tunatunr/id/5" for ::1 at 2021-02-26 14:16:57 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>false, "id"=>"5", "song"=>{"favorite"=>false}}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", false], ["updated_at", "2021-02-26 19:16:57.281263"], ["id", 5]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 2283)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:57 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1149)
+
+
+Started PUT "/tunatunr/id/4" for ::1 at 2021-02-26 14:16:57 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>false, "id"=>"4", "song"=>{"favorite"=>false}}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", false], ["updated_at", "2021-02-26 19:16:57.765992"], ["id", 4]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 2282)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:57 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1149)
+
+
+Started PUT "/tunatunr/id/3" for ::1 at 2021-02-26 14:16:58 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>false, "id"=>"3", "song"=>{"favorite"=>false}}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", false], ["updated_at", "2021-02-26 19:16:58.230961"], ["id", 3]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.9ms | Allocations: 2282)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:58 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1150)
+
+
+Started PUT "/tunatunr/id/2" for ::1 at 2021-02-26 14:16:59 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>false, "id"=>"2", "song"=>{"favorite"=>false}}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", false], ["updated_at", "2021-02-26 19:16:59.008701"], ["id", 2]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 2283)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:59 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 1149)
+
+
+Started PUT "/tunatunr/id/3" for ::1 at 2021-02-26 14:16:59 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>true, "id"=>"3", "song"=>{"favorite"=>true}}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", true], ["updated_at", "2021-02-26 19:16:59.482873"], ["id", 3]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.9ms | Allocations: 2282)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:16:59 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1149)
+
+
+Started PUT "/tunatunr/id/4" for ::1 at 2021-02-26 14:17:01 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>true, "id"=>"4", "song"=>{"favorite"=>true}}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", true], ["updated_at", "2021-02-26 19:17:01.255851"], ["id", 4]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 1.8ms | Allocations: 2284)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:17:01 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1150)
+
+
+Started PUT "/tunatunr/id/5" for ::1 at 2021-02-26 14:19:12 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>true, "id"=>"5", "song"=>{"favorite"=>true}}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", true], ["updated_at", "2021-02-26 19:19:12.730687"], ["id", 5]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 2283)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:19:12 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1149)
+
+
+Started PUT "/tunatunr/id/5" for ::1 at 2021-02-26 14:19:13 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>false, "id"=>"5", "song"=>{"favorite"=>false}}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", false], ["updated_at", "2021-02-26 19:19:13.314182"], ["id", 5]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 2283)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:19:13 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1149)
+
+
+Started DELETE "/tunatunr/id/5" for ::1 at 2021-02-26 14:19:14 -0500
+Processing by SongsController#destroy as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (0.2ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (15.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 19ms (ActiveRecord: 15.6ms | Allocations: 1772)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:19:14 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1029)
+
+
+Started PUT "/tunatunr/id/4" for ::1 at 2021-02-26 14:19:15 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>false, "id"=>"4", "song"=>{"favorite"=>false}}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", false], ["updated_at", "2021-02-26 19:19:15.124241"], ["id", 4]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 2283)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:19:15 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1029)
+
+
+Started PUT "/tunatunr/id/4" for ::1 at 2021-02-26 14:19:15 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>true, "id"=>"4", "song"=>{"favorite"=>true}}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", true], ["updated_at", "2021-02-26 19:19:15.611206"], ["id", 4]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 2282)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:19:15 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1029)
+
+
+Started PUT "/tunatunr/id/4" for ::1 at 2021-02-26 14:19:16 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>false, "id"=>"4", "song"=>{"favorite"=>false}}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", false], ["updated_at", "2021-02-26 19:19:16.213535"], ["id", 4]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (16.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 17.4ms | Allocations: 2282)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:19:16 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1029)
+
+
+Started PUT "/tunatunr/id/4" for ::1 at 2021-02-26 14:19:17 -0500
+Processing by SongsController#update as HTML
+  Parameters: {"favorite"=>true, "id"=>"4", "song"=>{"favorite"=>true}}
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mSong Update (0.2ms)[0m  [1m[33mUPDATE "songs" SET "favorite" = $1, "updated_at" = $2 WHERE "songs"."id" = $3[0m  [["favorite", true], ["updated_at", "2021-02-26 19:19:17.715552"], ["id", 4]]
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:29:in `update'
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.0ms | Allocations: 2282)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:19:17 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1029)
+
+
+Started DELETE "/tunatunr/id/4" for ::1 at 2021-02-26 14:19:18 -0500
+Processing by SongsController#destroy as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:44:in `set_song'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mSong Destroy (0.2ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (15.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:38:in `destroy'
+Completed 204 No Content in 19ms (ActiveRecord: 15.6ms | Allocations: 1772)
+
+
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:19:18 -0500
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 911)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (6.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "tunatunr_backend_2_development"[0m
+  [1m[35m (6.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "tunatunr_backend_2_test"[0m
+  [1m[35m (55.8ms)[0m  [1m[35mCREATE DATABASE "tunatunr_backend_2_development" ENCODING = 'unicode'[0m
+  [1m[35m (54.1ms)[0m  [1m[35mCREATE DATABASE "tunatunr_backend_2_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs" CASCADE[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "songs" ("id" bigserial primary key, "name" character varying, "artist" character varying, "album" character varying, "time" character varying, "favorite" boolean DEFAULT FALSE, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210226164359)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210226163743);
+
+[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-26 19:19:53.661178"], ["updated_at", "2021-02-26 19:19:53.661178"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "476ff4b2ee369547b72f0180be9c9a715b06e1dd"], ["created_at", "2021-02-26 19:19:53.669948"], ["updated_at", "2021-02-26 19:19:53.669948"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs" CASCADE[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "songs" ("id" bigserial primary key, "name" character varying, "artist" character varying, "album" character varying, "time" character varying, "favorite" boolean DEFAULT FALSE, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20210226164359)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20210226163743);
+
+[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-02-26 19:19:53.705761"], ["updated_at", "2021-02-26 19:19:53.705761"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2021-02-26 19:19:53.710848"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "476ff4b2ee369547b72f0180be9c9a715b06e1dd"], ["created_at", "2021-02-26 19:19:53.715631"], ["updated_at", "2021-02-26 19:19:53.715631"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "album", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Hot N Cold"], ["artist", "Katy Perry"], ["album", "One of the Boys"], ["time", "3:40"], ["created_at", "2021-02-26 19:19:53.749329"], ["updated_at", "2021-02-26 19:19:53.749329"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "album", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Never Gonna Give You Up"], ["artist", "Rick Astley"], ["album", "Whenever You Need Somebody"], ["time", "3:35"], ["created_at", "2021-02-26 19:19:53.753929"], ["updated_at", "2021-02-26 19:19:53.753929"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "album", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "$ave Dat Money"], ["artist", "Lil Dicky"], ["album", "Professional Rapper"], ["time", "4:50"], ["created_at", "2021-02-26 19:19:53.757730"], ["updated_at", "2021-02-26 19:19:53.757730"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "album", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Bad Habits"], ["artist", "Usher"], ["album", "Bad Habits"], ["time", "4:17"], ["created_at", "2021-02-26 19:19:53.761330"], ["updated_at", "2021-02-26 19:19:53.761330"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "album", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Gangnam Style"], ["artist", "PSY"], ["album", "Psy 6 (Six Rules), Part 1"], ["time", "3:39"], ["created_at", "2021-02-26 19:19:53.764916"], ["updated_at", "2021-02-26 19:19:53.764916"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.3ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "album", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Put Your Records On"], ["artist", "Ritt Momney"], ["album", "Put Your Records On"], ["time", "3:30"], ["created_at", "2021-02-26 19:19:53.768418"], ["updated_at", "2021-02-26 19:19:53.768418"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("name", "artist", "album", "time", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Lift Yourself"], ["artist", "Kanye West"], ["album", "Lift Yourself"], ["time", "2:27"], ["created_at", "2021-02-26 19:19:53.772057"], ["updated_at", "2021-02-26 19:19:53.772057"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/tunatunr" for ::1 at 2021-02-26 14:20:13 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" ORDER BY "songs"."id" ASC[0m
+  ↳ app/controllers/songs_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 8.8ms | ActiveRecord: 2.8ms | Allocations: 8680)
+
+

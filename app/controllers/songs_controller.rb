@@ -5,7 +5,7 @@ class SongsController < ApplicationController
   def index
     @songs = Song.all
 
-    render json: @songs
+    render json: @songs.order(:id)
   end
 
   # GET /songs/1
